@@ -1,0 +1,12 @@
+.darkmode {
+  background-color: black;
+  color: white;
+}
+
+.high-contrast {
+  filter: contrast(4);
+}
+
+.grayscale {
+  filter: saturate(0);
+}

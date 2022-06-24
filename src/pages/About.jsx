@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <MetaProvider>
       <SEO title='About' />
-      <p>Born in Reykjavík, lives in London</p>
+      <h2>Born in Reykjavík, lives in London, loves techno</h2>
       <Events />
     </MetaProvider>
   );

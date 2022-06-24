@@ -1,13 +1,11 @@
 .page-wrap {
-  width: 90%;
-  max-width: 1200px;
+  width: 96%;
   margin: 0 auto;
 }
 
 .page-flex-wrap {
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  max-width: 1200px;
+  width: 96%;
   margin: 0 auto;
 }

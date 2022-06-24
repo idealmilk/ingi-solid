@@ -2,4 +2,10 @@
 }
 
 .event {
+  display: inline-block;
+  margin: 1.5rem 7rem 1.5rem 0;
+}
+
+.event p:first-of-type {
+  margin-top: 0;
 }

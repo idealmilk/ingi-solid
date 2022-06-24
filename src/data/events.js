@@ -1,7 +1,7 @@
 export const EventsData = [
   {
     title: 'TT presents: Hermeth, INGI, Savvy',
-    date: '25 June 2022',
+    date: '25/06/2022',
     city: 'Leeds',
     club: 'Freedom Mills',
     bill: 'INGY, SAVVY',
@@ -9,7 +9,7 @@ export const EventsData = [
   },
   {
     title: 'Fly By Night Invites Bklava, ohmydais & Pluralist',
-    date: '17 June 2022',
+    date: '17/06/2022',
     city: 'Birmingham',
     club: 'Hare & Hounds',
     bill: 'Bklava, ohmydais, Pluralist (2), INGI',
@@ -17,7 +17,7 @@ export const EventsData = [
   },
   {
     title: 'Small Talk with Chippy Nonstop, Manami & Floorless',
-    date: '6 May 2022',
+    date: '06/05/2022',
     city: 'London',
     club: 'Corsica Studio',
     bill: 'Chippy Nonstop, Club Fitness, Iceboy Violet, Manami, INGI',
@@ -25,10 +25,60 @@ export const EventsData = [
   },
   {
     title: 'Cerebrum Rip Nights presents: INGI, Bardusco, Burgess',
-    date: '21 April 2022',
+    date: '21/04/2022',
     city: 'Manchester',
     club: 'XLR',
     bill: 'INGI, Bardusco, Burgess (UK)',
+    past: true,
+  },
+  {
+    title: 'Late Night Shopper Live From Grow',
+    date: '07/10/2021',
+    city: 'London',
+    club: 'The Cause',
+    bill: 'Breaka INGI',
+    past: true,
+  },
+  {
+    title: 'Continental: Bruce & Danielle',
+    date: '05/06/2020',
+    city: 'Newcastle',
+    club: 'The World Headquarters',
+    bill: 'Bruce, Danielle, INGI, Louis Heidensohn',
+    past: true,
+  },
+  {
+    title:
+      'Anti-Pattern: Acre [P13] B2B Shannen SP [Hyperdub] + Anti-Pattern DJs',
+    date: '21/02/2020',
+    city: 'London',
+    club: 'Grow Tottenham',
+    bill: 'Acre, Shannen SP, INGI, Beela, Poison Ivy',
+    past: true,
+  },
+  {
+    title: 'Off Beat: Yak & INGI',
+    date: '25/01/2020',
+    city: 'Manchester',
+    club: 'XLR',
+    bill: 'Yak, INGI, Zephyr (UK)',
+    past: true,
+  },
+  {
+    title: 'Social Motion: Koirala Kaesler Fundraiser',
+    date: '27/11/2019',
+    city: 'Sheffield',
+    club: 'Café Totem',
+    bill: 'INGI',
+    past: true,
+  },
+  {
+    title:
+      'Anti-Pattern: Anz, Blasha & Allatt, Phoebe Valentine + Anti-Pattern DJs',
+    date: '18/10/2019',
+    city: 'London',
+    club: 'Grow Tottenham',
+    bill: 'Blasha & Allatt, Anz, Phoebe Valentine, INGI, Beela',
     past: true,
   },
 ];

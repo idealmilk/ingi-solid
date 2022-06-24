@@ -2,7 +2,7 @@ import { Fade, Wrestle } from './../assets/projects';
 
 export const ProjectsData = [
   {
-    title: 'Fade',
+    title: 'Fade EP',
     image: Fade,
     date: '28 January 2022',
     label: 'Scuffed',
@@ -11,7 +11,7 @@ export const ProjectsData = [
     bandcamp: 'bandcamp',
   },
   {
-    title: 'Wrestle',
+    title: 'Wrestle EP',
     image: Wrestle,
     date: '29 November 2021',
     label: 'Fly By Night',
@@ -20,7 +20,7 @@ export const ProjectsData = [
     bandcamp: 'bandcamp',
   },
   {
-    title: 'Wrestle',
+    title: 'Wrestle EP',
     image: Wrestle,
     date: '29 November 2021',
     label: 'Fly By Night',
@@ -29,7 +29,7 @@ export const ProjectsData = [
     bandcamp: 'bandcamp',
   },
   {
-    title: 'Wrestle',
+    title: 'Wrestle EP',
     image: Wrestle,
     date: '29 November 2021',
     label: 'Fly By Night',
@@ -38,7 +38,7 @@ export const ProjectsData = [
     bandcamp: 'bandcamp',
   },
   {
-    title: 'Fade',
+    title: 'Fade EP',
     image: Fade,
     date: '28 January 2022',
     label: 'Scuffed',
@@ -47,7 +47,7 @@ export const ProjectsData = [
     bandcamp: 'bandcamp',
   },
   {
-    title: 'Wrestle',
+    title: 'Wrestle EP',
     image: Wrestle,
     date: '29 November 2021',
     label: 'Fly By Night',
@@ -56,7 +56,7 @@ export const ProjectsData = [
     bandcamp: 'bandcamp',
   },
   {
-    title: 'Wrestle',
+    title: 'Wrestle EP',
     image: Wrestle,
     date: '29 November 2021',
     label: 'Fly By Night',
@@ -65,7 +65,7 @@ export const ProjectsData = [
     bandcamp: 'bandcamp',
   },
   {
-    title: 'Wrestle',
+    title: 'Wrestle EP',
     image: Wrestle,
     date: '29 November 2021',
     label: 'Fly By Night',
@@ -74,7 +74,7 @@ export const ProjectsData = [
     bandcamp: 'bandcamp',
   },
   {
-    title: 'Fade',
+    title: 'Fade EP',
     image: Fade,
     date: '28 January 2022',
     label: 'Scuffed',
@@ -83,7 +83,7 @@ export const ProjectsData = [
     bandcamp: 'bandcamp',
   },
   {
-    title: 'Wrestle',
+    title: 'Wrestle EP',
     image: Wrestle,
     date: '29 November 2021',
     label: 'Fly By Night',

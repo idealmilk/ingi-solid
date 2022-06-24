@@ -23,8 +23,9 @@ export default function Events() {
         {(event, i) => (
           <div class='event'>
             <img src={event.image} alt='' class='event-image' />
+            <p class='event-title'>{event.title}</p>
             <p class='event-detail'>
-              {event.title}, {event.label}, {event.date}
+              {event.city}, {event.club} - {event.date}
             </p>
           </div>
         )}
@@ -35,8 +36,9 @@ export default function Events() {
         {(event, i) => (
           <div class='event'>
             <img src={event.image} alt='' class='event-image' />
+            <p class='event-title'>{event.title}</p>
             <p class='event-detail'>
-              {event.title}, {event.label}, {event.date}
+              {event.city}, {event.club} - {event.date}
             </p>
           </div>
         )}

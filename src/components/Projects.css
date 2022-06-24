@@ -1,13 +1,9 @@
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1.5rem;
 }
 
 .project {
-  flex-basis: calc(25% - 3rem);
-  margin-bottom: 6rem;
-  margin: 0 1.5rem 6rem;
+  display: inline-block;
+  margin: 0 6rem 6rem 0;
 }
 
 .project-image {

@@ -14,7 +14,8 @@ export default function Projects() {
           <div class='project'>
             <img src={project.image} alt='' class='project-image' />
             <p class='project-detail'>
-              {project.title}, {project.label}, {project.date}
+              <span>{project.title}</span>, {project.label},{' '}
+              {project.date.substring(project.date.length - 4)}
             </p>
           </div>
         )}

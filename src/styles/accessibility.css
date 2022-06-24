@@ -3,6 +3,15 @@
   color: white;
 }
 
+.darkmode a,
+.darkmode button {
+  color: white;
+}
+
+.darkmode .dropdown-content button {
+  background-color: black;
+}
+
 .high-contrast {
   filter: contrast(4);
 }

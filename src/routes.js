@@ -6,11 +6,15 @@ export const routes = [
     component: lazy(() => import('./pages/Home')),
   },
   {
-    path: '/about',
-    component: lazy(() => import('./pages/About')),
+    path: '/info',
+    component: lazy(() => import('./pages/Info')),
   },
   {
     path: '/projects',
     component: lazy(() => import('./pages/Projects')),
+  },
+  {
+    path: '/events',
+    component: lazy(() => import('./pages/Events')),
   },
 ];

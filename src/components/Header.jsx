@@ -22,7 +22,8 @@ export default function Header() {
 
         <nav>
           <NavLink href='/projects'>Projects</NavLink>
-          <NavLink href='/about'>About</NavLink>
+          <NavLink href='/events'>Events</NavLink>
+          <NavLink href='/info'>Info</NavLink>
         </nav>
 
         <div className='secondary-nav'>

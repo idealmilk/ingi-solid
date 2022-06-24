@@ -4,8 +4,79 @@
 .project {
   display: inline-block;
   margin: 0 6rem 6rem 0;
+  width: auto;
+  transition: all ease-in-out 0.4s;
 }
 
-.project-image {
+.project .project-details {
+  font-size: 1.6rem;
+  transition: all ease-in-out 0.4s;
+}
+
+.project.active {
+  /* width: 100vw;
+  height: 100vw; */
+  background-color: pink;
+}
+
+.project.inactive {
+  margin: 0;
+}
+
+.project.active {
+  display: flex;
+}
+
+.project.inactive .project-details,
+.project.active .project-details {
+  font-size: 0;
+}
+
+.project img {
   width: 8rem;
+  transition: all ease-in-out 0.4s;
+}
+
+.project.inactive img {
+  width: 0;
+}
+
+.project.active img {
+  width: 40vw;
+}
+
+.active-project-details {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.active-project-details p,
+.active-project-details a,
+.active-project-details h3 {
+  font-size: 0;
+  margin: 0;
+  height: 0;
+  width: 0;
+}
+
+.project.active .active-project-details {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project.active .active-project-details h3 {
+  font-size: 5rem;
+  height: auto;
+  width: auto;
+}
+
+.project.active .active-project-details p,
+.project.active .active-project-details a {
+  font-size: 4rem;
+  height: auto;
+  width: auto;
+}
+
+.active-project-details a:hover {
+  font-style: italic;
 }

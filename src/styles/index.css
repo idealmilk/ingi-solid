@@ -22,11 +22,11 @@ button {
 }
 
 .App {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 h1,

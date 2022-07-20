@@ -1,4 +1,4 @@
-import { useRoutes, Router } from 'solid-app-router';
+import { useRoutes, Router, Link } from 'solid-app-router';
 
 import Header from './components/Header';
 import { useCarbonIntensity } from './context/carbonIntensity';
@@ -11,6 +11,10 @@ export const App = () => {
   return (
     <Router>
       <div class='App'>
+        <Link href='/' class='mobile-title'>
+          <h1>INGI</h1>
+        </Link>
+
         <Header />
 
         <main className='page-wrap'>

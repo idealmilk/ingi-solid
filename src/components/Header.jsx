@@ -21,14 +21,16 @@ export default function Header() {
         </div>
 
         <nav>
-          <NavLink href='/projects'>Projects</NavLink>
-          <NavLink href='/events'>Events</NavLink>
-          <NavLink href='/info'>Info</NavLink>
+          <div className='nav-wrap'>
+            <NavLink href='/projects'>Projects</NavLink>
+            <NavLink href='/events'>Events</NavLink>
+            <NavLink href='/info'>Info</NavLink>
+          </div>
         </nav>
 
         <div className='secondary-nav'>
           <div class='dropdown'>
-            <button class='dropbtn'>Accessibility Controls</button>
+            <button class='dropbtn'>Accessibility</button>
             <div class='dropdown-content'>
               <button onClick={() => AdjustFontSize('add')}>
                 Increase Font Size

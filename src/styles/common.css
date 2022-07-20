@@ -1,6 +1,7 @@
 .page-wrap {
   width: 98%;
   margin: 0 auto;
+  transform: translateY(10rem);
 }
 
 .page-flex-wrap {
@@ -8,4 +9,22 @@
   justify-content: space-between;
   width: 98%;
   margin: 0 auto;
+}
+
+.mobile-title {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .page-wrap {
+    transform: none;
+  }
+
+  .page-flex-wrap {
+    display: block;
+  }
+
+  .mobile-title {
+    display: block;
+  }
 }

@@ -16,7 +16,6 @@
 .project.active {
   /* width: 100vw;
   height: 100vw; */
-  background-color: pink;
 }
 
 .project.inactive {
@@ -47,8 +46,11 @@
 }
 
 .active-project-details {
-  opacity: 0;
-  visibility: hidden;
+  padding-left: 3rem;
+}
+
+.active-project-details span {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .active-project-details p,
@@ -56,19 +58,7 @@
 .active-project-details h3 {
   font-size: 0;
   margin: 0;
-  height: 0;
-  width: 0;
-}
-
-.project.active .active-project-details {
-  opacity: 1;
-  visibility: visible;
-}
-
-.project.active .active-project-details h3 {
-  font-size: 5rem;
-  height: auto;
-  width: auto;
+  transition: all ease-in-out 0.4s;
 }
 
 .project.active .active-project-details p,
@@ -78,6 +68,48 @@
   width: auto;
 }
 
+.project.active .active-project-details h3 {
+  font-size: 6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
 .active-project-details a:hover {
   font-style: italic;
+}
+
+.streaming,
+.release-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.release-info {
+  margin-top: 1rem;
+}
+
+.streaming {
+  margin-bottom: 1rem;
+}
+
+.credit {
+  font-size: 0;
+}
+
+.project.active .credit {
+  text-align: justify;
+  font-size: 4rem;
+}
+
+.credit:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .project-details {
+    display: none;
+  }
 }

@@ -27,6 +27,9 @@ export default function Events() {
             <p class='event-detail'>
               {event.city}, {event.club} - {event.date}
             </p>
+            <div className='links'>
+              <p>Facebook</p>
+            </div>
           </div>
         )}
       </For>
@@ -40,6 +43,9 @@ export default function Events() {
             <p class='event-detail'>
               {event.city}, {event.club} - {event.date}
             </p>
+            <div className='links'>
+              <p>Facebook</p>
+            </div>
           </div>
         )}
       </For>

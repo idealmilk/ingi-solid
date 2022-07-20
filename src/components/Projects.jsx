@@ -59,12 +59,27 @@ export default function Projects() {
             </p>
             <div class='active-project-details'>
               <h3>{project.title}</h3>
-              <p>{project.label}</p>
-              <p>{project.date}</p>
-              <div className='streaming'>
-                <a href='#'>Spotify</a>
-                <a href='#'>Apple Music</a>
+              <p>
+                INGI debuts on Scuffed Recordings with three tracks spanning
+                anthemic breaks, wonky UK techno and percussive club music.
+              </p>
+              <div class='release-info'>
+                <p>
+                  {' '}
+                  <span>{project.label}</span>
+                </p>
+                <p>{project.date}</p>
+              </div>
+              <div class='streaming'>
+                <a href='#'>Spotify, </a>
+                <a href='#'>Apple Music, </a>
                 <a href='#'>Bandcamp</a>
+              </div>
+              <div class='credit'>
+                Mastered by <span>Rob Small</span>
+              </div>
+              <div class='credit'>
+                Artwork by <span>Todd Stiefelmayer</span>
               </div>
             </div>
           </div>

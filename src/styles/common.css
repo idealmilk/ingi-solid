@@ -18,10 +18,12 @@
 @media screen and (max-width: 480px) {
   .page-wrap {
     transform: none;
+    width: 100%;
   }
 
   .page-flex-wrap {
     display: block;
+    width: 100%;
   }
 
   .mobile-title {

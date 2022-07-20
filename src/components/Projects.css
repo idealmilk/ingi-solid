@@ -112,4 +112,12 @@
   .project-details {
     display: none;
   }
+
+  .project.active {
+    display: block;
+  }
+
+  .project.active img {
+    width: 100vw;
+  }
 }

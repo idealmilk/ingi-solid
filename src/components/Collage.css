@@ -10,6 +10,14 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  background-size: cover;
   height: 620px;
   width: 580px;
+}
+
+@media screen and (max-width: 480px) {
+  .collage-img {
+    width: 100%;
+    height: 90vh;
+  }
 }

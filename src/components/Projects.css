@@ -109,6 +109,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .project.active {
+    margin: 0;
+  }
+
   .project-details {
     display: none;
   }
@@ -119,5 +123,22 @@
 
   .project.active img {
     width: 100vw;
+  }
+
+  .active-project-details {
+    padding-top: 1rem;
+    padding-left: 4%;
+    width: 92%;
+  }
+
+  .project.active .active-project-details h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .project.active .active-project-details p,
+  .project.active .active-project-details a,
+  .project.active .credit {
+    font-size: 2rem;
   }
 }

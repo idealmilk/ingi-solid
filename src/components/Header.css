@@ -34,7 +34,7 @@ nav {
 }
 
 .nav-wrap > a {
-  margin-left: 20px;
+  margin-left: 2rem;
   font-size: 4rem;
 }
 
@@ -130,8 +130,14 @@ nav {
     display: none;
   }
 
+  nav {
+    left: revert;
+    transform: none;
+    margin: 0;
+  }
+
   nav > a {
-    margin-left: 10px;
+    margin-left: 0.5rem;
     font-size: 3rem;
   }
 

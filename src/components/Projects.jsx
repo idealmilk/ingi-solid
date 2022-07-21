@@ -71,9 +71,27 @@ export default function Projects() {
                 <p>{project.date}</p>
               </div>
               <div class='streaming'>
-                <a href='#'>Spotify, </a>
-                <a href='#'>Apple Music, </a>
-                <a href='#'>Bandcamp</a>
+                <a
+                  href='https://open.spotify.com/album/1Y2SsSgvDd46jrmstVNT9p?si=oWW0ZWUbThm6tcQsZT7ZfA'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Spotify,{' '}
+                </a>
+                <a
+                  href='https://open.spotify.com/album/1Y2SsSgvDd46jrmstVNT9p?si=oWW0ZWUbThm6tcQsZT7ZfA'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Apple Music,{' '}
+                </a>
+                <a
+                  href='https://open.spotify.com/album/1Y2SsSgvDd46jrmstVNT9p?si=oWW0ZWUbThm6tcQsZT7ZfA'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  Bandcamp
+                </a>
               </div>
               <div class='credit'>
                 Mastered by <span>Rob Small</span>

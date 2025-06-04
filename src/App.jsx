@@ -1,4 +1,4 @@
-import { useRoutes, Router, Link } from 'solid-app-router';
+import { useRoutes, Router, Link } from '@solidjs/router';
 
 import Header from './components/Header';
 import { useCarbonIntensity } from './context/carbonIntensity';

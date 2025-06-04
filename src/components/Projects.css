@@ -56,7 +56,7 @@
 
 .project-details {
   font-size: 1.6rem;
-  /* transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project.inactive .project-details,

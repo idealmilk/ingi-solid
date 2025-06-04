@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'solid-app-router';
+import { Link, NavLink } from '@solidjs/router';
 
 import {
   ToggleBodyClass,

@@ -1,5 +1,5 @@
 import { Title, Meta } from 'solid-meta';
-import { useLocation } from 'solid-app-router';
+import { useLocation } from '@solidjs/router';
 
 export default function SEO({ title, description, image, type }) {
   const { pathname } = useLocation();

@@ -8,7 +8,8 @@ export default function Projects() {
   const [projects, setProjects] = createSignal(ProjectsData);
 
   const handleProjectClick = (e) => {
-    const alreadyActive = e.target.parentNode.classList.contains('active');
+    const projectElement = e.target.parentNode;
+    const alreadyActive = projectElement.classList.contains('active');
     let anyElementActive = false;
 
     const elements = document.getElementsByClassName('project');
@@ -19,8 +20,19 @@ export default function Projects() {
       }
     }
 
-    console.log(alreadyActive);
-    console.log(anyElementActive);
+    if (!alreadyActive && !anyElementActive) {
+      // Store the original position before adding the active class
+      const rect = projectElement.getBoundingClientRect();
+      const parentRect = projectElement.parentElement.getBoundingClientRect();
+
+      // Calculate position relative to the parent
+      const originalX = rect.left - parentRect.left;
+      const originalY = rect.top - parentRect.top;
+
+      // Set the CSS variables
+      projectElement.style.setProperty('--original-x', `${originalX}px`);
+      projectElement.style.setProperty('--original-y', `${originalY}px`);
+    }
 
     for (const element of elements) {
       if (anyElementActive && !alreadyActive) {
@@ -35,10 +47,17 @@ export default function Projects() {
     }
 
     if (alreadyActive) {
-      e.target.parentNode.classList.remove('active');
+      // Add closing animation
+      projectElement.classList.add('closing');
+      projectElement.classList.remove('active');
+
+      // Remove the closing class after animation completes
+      setTimeout(() => {
+        projectElement.classList.remove('closing');
+      }, 400); // Match the animation duration
     } else {
-      e.target.parentNode.classList.add('active');
-      e.target.parentNode.classList.remove('inactive');
+      projectElement.classList.add('active');
+      projectElement.classList.remove('inactive');
     }
   };
 

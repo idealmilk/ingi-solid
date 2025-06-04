@@ -1,29 +1,62 @@
 .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: 6rem;
+  position: relative;
 }
 
 .project {
-  display: inline-block;
-  margin: 0 6rem 6rem 0;
-  width: auto;
-  transition: all ease-in-out 0.4s;
-}
-
-.project .project-details {
-  font-size: 1.6rem;
-  transition: all ease-in-out 0.4s;
+  position: relative;
+  width: 8rem;
+  transform-origin: center;
+  z-index: 1;
 }
 
 .project.active {
-  /* width: 100vw;
-  height: 100vw; */
+  position: absolute;
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  transform: translate(var(--original-x, 0), var(--original-y, 0));
+  animation: moveToLeft 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.project.closing {
+  position: absolute;
+  width: 8rem;
+  z-index: 2;
+  animation: moveToOriginal 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes moveToLeft {
+  from {
+    transform: translate(var(--original-x, 0), var(--original-y, 0));
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveToOriginal {
+  from {
+    transform: translate(0, 0);
+    width: 100%;
+  }
+  to {
+    transform: translate(var(--original-x, 0), var(--original-y, 0));
+    width: 8rem;
+  }
 }
 
 .project.inactive {
+  opacity: 0;
   margin: 0;
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project.active {
-  display: flex;
+.project-details {
+  font-size: 1.6rem;
+  /* transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .project.inactive .project-details,
@@ -33,20 +66,33 @@
 
 .project img {
   width: 8rem;
-  transition: all ease-in-out 0.4s;
+  height: 8rem;
+  object-fit: cover;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
 .project.inactive img {
-  width: 0;
+  width: 8rem;
 }
 
 .project.active img {
   width: 40vw;
+  height: 40vw;
 }
 
 .active-project-details {
   padding-left: 3rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+}
+
+.project.active .active-project-details {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
 }
 
 .active-project-details span {
@@ -58,7 +104,7 @@
 .active-project-details h3 {
   font-size: 0;
   margin: 0;
-  transition: all ease-in-out 0.4s;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project.active .active-project-details p,
@@ -109,20 +155,23 @@
 }
 
 @media screen and (max-width: 480px) {
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    gap: 2rem;
+  }
+
   .project.active {
     margin: 0;
+    display: block;
   }
 
   .project-details {
     display: none;
   }
 
-  .project.active {
-    display: block;
-  }
-
   .project.active img {
     width: 100vw;
+    height: 100vw;
   }
 
   .active-project-details {
